@@ -10,7 +10,7 @@ namespace ConsolePipelineRepository
     {
         public string GetName()
         {
-            string name = "Hello,My Console App You Succeeded";
+            string name = "Hello,My Console App You Succeeded nd Triggered";
             Console.WriteLine(name);
             return name;
 

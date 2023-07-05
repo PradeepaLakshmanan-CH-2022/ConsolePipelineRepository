@@ -1,12 +1,8 @@
 # Stop the console application if it's already running
-# Set the application path
-
-
 Get-Process -Name "ConsolePipelineRepository" -ErrorAction SilentlyContinue | Stop-Process -Force
 
-# Specify the path to your console application executable
+# Set the application path
 $consoleAppPath = "C:\Helloworld\src\ConsolePipelineRepository"
-
 
 # Specify the path for the output file
 $outputFilePath = "C:\Outputfile\Output.txt"
@@ -16,10 +12,14 @@ $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 # Create the output string with timestamp
 $outputContent = "Pipeline triggered at: $timestamp`n"
-# Run the console application and redirect the output to a file
-Start-Process -FilePath "dotnet" -ArgumentList "run", "--no-restore", "--no-build", "--project", $consoleAppPath, "--", ">", $outputFilePath -NoNewWindow -Wait
+
+# Run the console application and capture the output
+$output = & "dotnet" run --no-restore --no-build --project "$consoleAppPath" 2>&1
+
+# Write the output to the output file
+$output | Out-File -FilePath $outputFilePath -Encoding UTF8
 
 # Read the output file and display its contents
-$outputContent = Get-Content -Path $OutputFilePath -Raw
+$outputContent = Get-Content -Path $outputFilePath -Raw
 Write-Host "Console application output:"
 Write-Host $outputContent
