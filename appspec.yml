@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
   -  source: .
-     destination: C:\HomeApplication
+     destination: C:\ConsoleApp
 
 hooks:
   ApplicationStart:

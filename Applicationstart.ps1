@@ -1,5 +1,5 @@
 # Set the application path
-$consoleAppPath = "C:\HomeApplication\src\ConsolePipelineRepository"
+$consoleAppPath = "C:\ConsoleApp\src\ConsolePipelineRepository"
 
 # Specify the path for the output file
 $outputFilePath = "C:\Outputfile\Output.txt"
