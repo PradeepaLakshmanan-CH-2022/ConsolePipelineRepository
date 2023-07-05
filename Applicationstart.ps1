@@ -20,6 +20,6 @@ $outputContent = "Pipeline triggered at: $timestamp`n"
 Start-Process -FilePath "dotnet" -ArgumentList "run", "--no-restore", "--no-build", "--project", $consoleAppPath, "--", ">", $outputFilePath -NoNewWindow -Wait
 
 # Read the output file and display its contents
-$outputContent = Get-Content -Path $outputFilePath -Raw
+$outputContent = Get-Content -Path $OutputFilePath -Raw
 Write-Host "Console application output:"
 Write-Host $outputContent
