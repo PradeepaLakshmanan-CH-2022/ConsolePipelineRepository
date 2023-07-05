@@ -7,16 +7,19 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
+      - cd ConsolePipelineRepository
       - dotnet restore
   build:
     commands:
       - echo Build started on `date`
+      - cd ConsolePipelineRepository
       - dotnet build --configuration Release
   post_build:
     commands:
       - echo Publish started on `date`
+      - cd ConsolePipelineRepository
       - dotnet publish --configuration Release --output ./publish
 artifacts:
   files:
-    - '**/*'
-  base-directory: 'publish'
+    - 'ConsolePipelineRepository/publish/**/*'
+  base-directory: 'ConsolePipelineRepository'
