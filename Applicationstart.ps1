@@ -2,10 +2,10 @@
 # Set the application path
 
 
-Get-Process -Name "HelloApp" -ErrorAction SilentlyContinue | Stop-Process -Force
+Get-Process -Name "ConsolePipelineRepository" -ErrorAction SilentlyContinue | Stop-Process -Force
 
 # Specify the path to your console application executable
-$consoleAppPath = "C:\Helloworld\HelloApp"
+$consoleAppPath = "C:\Helloworld\ConsolePipelineRepository"
 
 
 # Specify the path for the output file
