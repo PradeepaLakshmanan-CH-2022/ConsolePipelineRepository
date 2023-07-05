@@ -17,7 +17,6 @@ phases:
   post_build:
     commands:
       - echo Publish started on `date`
-      - cd ConsolePipelineRepository
       - dotnet publish --configuration Release --output ./publish
 artifacts:
   files:
