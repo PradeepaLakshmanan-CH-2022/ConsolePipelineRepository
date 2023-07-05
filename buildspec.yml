@@ -19,5 +19,5 @@ phases:
       - dotnet publish --configuration Release --output ./publish
 artifacts:
   files:
-    - '**/*'
-  base-directory: 'publish'
+    - 'ConsolePipelineRepository/publish/**/*'
+  base-directory: 'ConsolePipelineRepository'
