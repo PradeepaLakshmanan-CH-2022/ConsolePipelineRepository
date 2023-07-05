@@ -1,0 +1,15 @@
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\bin\Debug\net6.0\ConsolePipelineRepository.exe
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\bin\Debug\net6.0\ConsolePipelineRepository.deps.json
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\bin\Debug\net6.0\ConsolePipelineRepository.runtimeconfig.json
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\bin\Debug\net6.0\ConsolePipelineRepository.dll
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\bin\Debug\net6.0\ConsolePipelineRepository.pdb
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\ConsolePipelineRepository.csproj.AssemblyReference.cache
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\ConsolePipelineRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\ConsolePipelineRepository.AssemblyInfoInputs.cache
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\ConsolePipelineRepository.AssemblyInfo.cs
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\ConsolePipelineRepository.csproj.CoreCompileInputs.cache
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\ConsolePipelineRepository.dll
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\refint\ConsolePipelineRepository.dll
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\ConsolePipelineRepository.pdb
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\ConsolePipelineRepository.genruntimeconfig.cache
+C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\obj\Debug\net6.0\ref\ConsolePipelineRepository.dll
