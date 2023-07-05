@@ -1,8 +1,9 @@
 # Set the application path
 $consoleAppPath = "C:\ConsoleApp\src\ConsolePipelineRepository"
 
-# Specify the path for the output file
-$outputFilePath = "C:\Outputfile\Output.txt"
+# Create a unique output file name with a timestamp
+$outputFileName = "Output_$(Get-Date -Format 'yyyyMMddHHmmss').txt"
+$outputFilePath = "C:\Outputfile\$outputFileName"
 
 # Get the current timestamp
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
