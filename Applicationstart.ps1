@@ -4,9 +4,6 @@ $consoleAppPath = "C:\HomeApplication\src\ConsolePipelineRepository"
 # Specify the path for the output file
 $outputFilePath = "C:\Outputfile\Output.txt"
 
-# Clear the content of the output file
-Clear-Content -Path $outputFilePath -Force
-
 # Get the current timestamp
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
@@ -20,7 +17,7 @@ $outputContent += $output
 $outputContent += "`n"
 
 # Append the output to the output file
-$outputContent | Out-File -FilePath $outputFilePath -Encoding UTF8
+$outputContent | Out-File -FilePath $outputFilePath -Append -Encoding UTF8
 
 # Read the output file and display its contents
 $outputContent = Get-Content -Path $outputFilePath -Raw
