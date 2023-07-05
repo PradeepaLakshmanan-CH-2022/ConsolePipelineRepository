@@ -5,7 +5,7 @@
 Get-Process -Name "ConsolePipelineRepository" -ErrorAction SilentlyContinue | Stop-Process -Force
 
 # Specify the path to your console application executable
-$consoleAppPath = "C:\Helloworld\ConsolePipelineRepository"
+$consoleAppPath = "C:\Helloworld\src\ConsolePipelineRepository"
 
 
 # Specify the path for the output file
