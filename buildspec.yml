@@ -14,7 +14,7 @@ phases:
       - echo Build started on `date`
       - cd ConsolePipelineRepository
       - dotnet build --configuration Release
- post_build:
+  post_build:
     commands:
       - echo Publish started on `date`
       - cd ConsolePipelineRepository
