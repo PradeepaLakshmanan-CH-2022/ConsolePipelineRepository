@@ -2,7 +2,7 @@
 Get-Process -Name "ConsolePipelineRepository" -ErrorAction SilentlyContinue | Stop-Process -Force
 
 # Set the application path
-$consoleAppPath = "C:\Helloworld\src\ConsolePipelineRepository"
+$consoleAppPath = "C:\HomeApplication\src\ConsolePipelineRepository"
 
 # Specify the path for the output file
 $outputFilePath = "C:\Outputfile\Output.txt"
