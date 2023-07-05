@@ -1,5 +1,18 @@
-# Set the application path
-$consoleAppPath = "C:\ConsoleApp\src\ConsolePipelineRepository"
+# Set the deployment path
+$deploymentPath = "C:\ConsoleApp"
+
+# Delete existing files in the deployment path
+Remove-Item -Path $deploymentPath -Recurse -Force
+
+# Copy the latest code to the deployment path
+$sourcePath = $env:CODEDEPLOYMENT_SOURCE
+Copy-Item -Path $sourcePath -Destination $deploymentPath -Recurse -Force
+
+# Set the application path to the updated deployment path
+$consoleAppPath = "$deploymentPath\src\ConsolePipelineRepository"
+
+# Run the console application and capture the output
+$output = & "dotnet" run --no-restore --no-build --project "$consoleAppPath" 2>&1
 
 # Create a unique output file name with a timestamp
 $outputFileName = "Output_$(Get-Date -Format 'yyyyMMddHHmmss').txt"
@@ -7,9 +20,6 @@ $outputFilePath = "C:\Outputfile\$outputFileName"
 
 # Get the current timestamp
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-
-# Run the console application and capture the output
-$output = & "dotnet" run --no-restore --no-build --project "$consoleAppPath" 2>&1
 
 # Create the output string with timestamp and output
 $outputContent = "Pipeline triggered at: $timestamp`n"
