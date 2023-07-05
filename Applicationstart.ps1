@@ -16,8 +16,8 @@ $outputContent += "Console application output:`n"
 $outputContent += $output
 $outputContent += "`n"
 
-# Append the output to the output file
-$outputContent | Out-File -FilePath $outputFilePath -Append -Encoding UTF8
+# Write the output to the output file
+$outputContent | Out-File -FilePath $outputFilePath -Encoding UTF8
 
 # Read the output file and display its contents
 $outputContent = Get-Content -Path $outputFilePath -Raw
