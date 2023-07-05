@@ -1,7 +1,7 @@
 version: 0.0
 os: windows
 files:
-  -  source: C:\Users\Pradeepa.lakshmanan\source\repos\ConsolePipelineRepository\src\ConsolePipelineRepository\bin\Debug
+  -  source: \src\ConsolePipelineRepository
      destination: C:\ConsoleApp
 
 hooks:
